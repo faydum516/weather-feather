@@ -1,0 +1,152 @@
+$display: flex;
+$justifyContent: center;
+$alignItems: center;
+$flexDirection: column;
+$fontWeight: 600;
+$pointer: pointer;
+$generalFont: 0.9375em;
+
+// Styling the title
+$titleMargin: 15px 0 20px 0;
+$titleFont: 1.1875em;
+
+// Styling the current weather section
+$marginBottom: 15px;
+
+// Styling the current weather card
+$backgroundColor: #fff;
+$borderRadius: 10px;
+$padding: 12.5px;
+
+// Styling the icon-and-term part (left side of the current weather card)
+$marginRight: 10px;
+
+// Styling the weather icon
+$backgroundIconColor: #cccccc;
+$sideLength: 110px;
+
+// Styling the weather term
+$termFont: $generalFont;
+
+// Styling the temperature
+$fontFamily: 'Raleway', sans-serif;
+$temperatureFont: 2em;
+$temperatureMargin: 0 10px;
+
+// Styling the temperature units
+$textAlign: center;
+$marginTopBottom: 5px 0;
+$transition: text-shadow 0.3s ease-in;
+$unitFont: 0.93em;
+
+// Styling the weather info
+$marginLeft: 10px;
+$weatherInfoFont: $generalFont;
+
+.CurrentWeather {
+    display: $display;
+    justify-content: $justifyContent;
+    align-items: $alignItems;
+    flex-direction: $flexDirection;
+    margin-bottom: $marginBottom;
+
+    .CW-title {
+        margin: $titleMargin;
+        font-size: $titleFont;
+    }
+
+    .CurrentWeatherCard {
+        display: $display;
+        justify-content: $justifyContent;
+        background-color: $backgroundColor;
+        border-radius: $borderRadius;
+        padding: $padding;
+
+        .icon-and-term {
+            display: $display;
+            justify-content: $justifyContent;
+            align-items: $alignItems;
+            flex-direction: $flexDirection;
+            margin-right: $marginRight;
+
+            .weather-term {
+                font-weight: $fontWeight;
+            }
+        }            
+        
+        .temperature {
+            font-family: $fontFamily;
+            font-weight: $fontWeight;
+            margin: $temperatureMargin;
+
+            .temperature-display {
+                font-size: $temperatureFont;
+            }
+            .temperature-units {
+                text-align: $textAlign;
+                margin: $marginTopBottom;
+            }
+            .unit-click {
+                $fontWeight: 700;
+                font-weight: $fontWeight;
+                cursor: $pointer;
+                -webkit-transition: $transition;
+                -o-transition: $transition;
+                -moz-transition: $transition;
+                transition: $transition;
+            }
+            .unit-click:hover {
+                text-shadow: 0 0 3px #333333;
+            }
+        }
+
+        .weather-info {
+            display: $display;
+            flex-direction: $flexDirection;
+            font-weight: $fontWeight;
+            margin-left: $marginLeft;
+        }
+    }
+}            
+
+.currentIcon {
+    background-color: $backgroundIconColor;
+    height: $sideLength;
+    width: $sideLength;
+}
+
+@media screen and (max-width: 450px) {
+
+    $titleFont: 1em;
+    $temperatureFont: 1.75em;
+    $sideLength: 100px;
+
+    .CurrentWeather {
+        .CW-title {
+            font-size: $titleFont;
+        }
+        .CurrentWeatherCard {
+            .icon-and-term {
+                .weather-term {
+                    font-size: $termFont;
+                }
+            }
+            .temperature {
+                .temperature-display {
+                    font-size: $temperatureFont;
+                }
+                .temperature-units {
+                    font-size: $unitFont;
+                }
+            }
+            .weather-info {
+                font-size: $weatherInfoFont;
+            }
+        }
+    }
+
+    .currentIcon {
+        height: $sideLength;
+        width: $sideLength;
+    }
+}

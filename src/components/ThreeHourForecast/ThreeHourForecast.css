@@ -1,0 +1,75 @@
+.ThreeHourForecast, .ForecastCards, .ForecastCard {
+    display: flex;    
+}
+.ThreeHourForecast, .ForecastCard {    
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.ForecastCards {
+    overflow-x: auto;
+}
+.ForecastCards::-webkit-scrollbar {
+    height: 10px;
+}
+.ForecastCards::-webkit-scrollbar-thumb {
+    background: #747474; 
+    border-radius: 10px;
+} 
+.ForecastCards::-webkit-scrollbar-thumb:hover {
+    background: #474747; 
+}
+.ForecastCard {
+    font-size: 0.8125em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 7.5px;
+}
+.ForecastCard:not(.ForecastCard:first-child, .ForecastCard:last-child) {
+    margin: 0 2.5px;
+}
+.ForecastCard:first-child {
+    margin-right: 2.5px;
+}
+.ForecastCard:last-child {
+    margin-left: 2.5px;
+}
+.WeatherIcon {
+    background-color: #cccccc;
+    width: 90px;
+    height: 90px;
+}
+.ForecastTitle {
+    margin: 20px 0;
+    font-size: 1.1875em;
+}
+
+@media screen and (max-width: 950px) {
+    .ForecastCards {
+        width: 500px
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .ForecastTitle {
+        font-size: 1em;
+    }
+    .ForecastCards {
+        width: 400px;
+    }
+    .ForecastCards::-webkit-scrollbar {
+        height: 7.5px;
+    }
+    .ForecastCard {
+        padding: 7.5px;
+    }
+    .WeatherIcon {
+        width: 65px;
+        height: 65px;
+    }
+    .ForecastTime {
+        font-size: 0.9em;
+    }
+}

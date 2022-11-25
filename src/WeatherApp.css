@@ -1,4 +1,4 @@
-.App {
+/*.App {
   text-align: center;
 }
 
@@ -35,4 +35,26 @@
   to {
     transform: rotate(360deg);
   }
+}*/
+.WeatherApp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.location-title {
+    font-size: 1.75em;
+}
+
+@media screen and (max-width: 950px) {
+    .location-title {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .location-title {
+        font-size: 1.5em;
+    }
 }

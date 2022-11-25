@@ -1,0 +1,82 @@
+.CurrentWeather {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+.CurrentWeather .CW-title {
+  margin: 15px 0 20px 0;
+  font-size: 1.1875em;
+}
+.CurrentWeather .CurrentWeatherCard {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 12.5px;
+}
+.CurrentWeather .CurrentWeatherCard .icon-and-term {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 10px;
+}
+.CurrentWeather .CurrentWeatherCard .icon-and-term .weather-term {
+  font-weight: 600;
+}
+.CurrentWeather .CurrentWeatherCard .temperature {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  margin: 0 10px;
+}
+.CurrentWeather .CurrentWeatherCard .temperature .temperature-display {
+  font-size: 2em;
+}
+.CurrentWeather .CurrentWeatherCard .temperature .temperature-units {
+  text-align: center;
+  margin: 5px 0;
+}
+.CurrentWeather .CurrentWeatherCard .temperature .unit-click {
+  font-weight: 700;
+  cursor: pointer;
+  transition: text-shadow 0.3s ease-in;
+}
+.CurrentWeather .CurrentWeatherCard .temperature .unit-click:hover {
+  text-shadow: 0 0 3px #333333;
+}
+.CurrentWeather .CurrentWeatherCard .weather-info {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+.currentIcon {
+  background-color: #cccccc;
+  height: 110px;
+  width: 110px;
+}
+
+@media screen and (max-width: 450px) {
+  .CurrentWeather .CW-title {
+    font-size: 1em;
+  }
+  .CurrentWeather .CurrentWeatherCard .icon-and-term .weather-term {
+    font-size: 0.9375em;
+  }
+  .CurrentWeather .CurrentWeatherCard .temperature .temperature-display {
+    font-size: 1.75em;
+  }
+  .CurrentWeather .CurrentWeatherCard .temperature .temperature-units {
+    font-size: 0.93em;
+  }
+  .CurrentWeather .CurrentWeatherCard .weather-info {
+    font-size: 0.9375em;
+  }
+  .currentIcon {
+    height: 100px;
+    width: 100px;
+  }
+}/*# sourceMappingURL=CurrentWeather.css.map */

@@ -1,0 +1,35 @@
+.Header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #aaaaaa8f;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+}
+.HeaderTitle {
+    position: absolute;
+    left: 50px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 950px) {
+    .Header {
+        justify-content: center;
+    }
+    .HeaderTitle {
+        position: static;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .Header {
+        height: 55px;
+    }
+    .HeaderTitle {
+        font-size: 1.25em;
+    }
+}
