@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/weather-feather/static/css/main.1a3427e6.css",
+    "main.js": "/weather-feather/static/js/main.1bc60429.js",
+    "static/js/787.4ab770c9.chunk.js": "/weather-feather/static/js/787.4ab770c9.chunk.js",
+    "static/media/blue_sky.png": "/weather-feather/static/media/blue_sky.d4adb00a8e9f361cc6b5.png",
+    "index.html": "/weather-feather/index.html",
+    "main.1a3427e6.css.map": "/weather-feather/static/css/main.1a3427e6.css.map",
+    "main.1bc60429.js.map": "/weather-feather/static/js/main.1bc60429.js.map",
+    "787.4ab770c9.chunk.js.map": "/weather-feather/static/js/787.4ab770c9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1a3427e6.css",
+    "static/js/main.1bc60429.js"
+  ]
+}
