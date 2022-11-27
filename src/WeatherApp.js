@@ -94,12 +94,13 @@ function WeatherApp() {
     <main className="WeatherApp">
       <Header />
       <SearchLocation handleSubmit={searchLocation} />
-      {location && 
+      {location && (location !== "No location found" ?
         <section className="weather-section">
           <h2 className="location-title">{location.replace(/,/g, ", ")}</h2>
           <CurrentWeather currentWeather={currentWeather}/>
           <ThreeHourForecast hourArr={hourlyForecast} />
-        </section>
+        </section> :
+        <p className="no-location">Sorry, no such location is found.</p>)
       }
     </main>
   );

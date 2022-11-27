@@ -35,8 +35,19 @@ function SearchLocation(props) {
             autoSearches.length = 8;
         }
         setInputValue(text);
-        setLocation(text); 
+
+        if (data.findIndex(checkLocation) !== -1) {
+          setLocation(text);
+        }
+        else {
+          setLocation("No location found");
+        }
+
         setSearches(autoSearches);
+
+        function checkLocation(item) {
+            return item.city.replace(/,/g, ", ") + ", " + item.country === text;
+        }
     }
 
     function handleSubmit(event) {

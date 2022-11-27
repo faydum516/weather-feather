@@ -64,7 +64,7 @@
     background-color: rgba(0, 0, 0, 0.45);
 }
 
-@media screen and (max-width: 450px){
+@media screen and (max-width: 500px){
     .location-input, .suggestion-list {
         font-size: 0.9375em;
         width: 300px;

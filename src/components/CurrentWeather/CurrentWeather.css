@@ -59,7 +59,7 @@
   width: 110px;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
   .CurrentWeather .CW-title {
     font-size: 1em;
   }
