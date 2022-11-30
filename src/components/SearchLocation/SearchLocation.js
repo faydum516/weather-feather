@@ -12,7 +12,7 @@ function SearchLocation(props) {
     useEffect(() => {
 
       async function getData() {
-          const response = await axios.get("https://weather-feather-app-backend.herokuapp.com/v1/posts");
+          const response = await axios.get("https://weather-feather-backend.onrender.com/v1/posts");
           setData(response.data);
       }
 
