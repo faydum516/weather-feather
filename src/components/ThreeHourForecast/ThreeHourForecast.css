@@ -28,13 +28,13 @@
     border-radius: 7.5px;
 }
 .ForecastCard:not(.ForecastCard:first-child, .ForecastCard:last-child) {
-    margin: 0 2.5px;
+    margin: 0 2.5px 2px 2.5px;
 }
 .ForecastCard:first-child {
-    margin-right: 2.5px;
+    margin: 0 2.5px 2px 0;
 }
 .ForecastCard:last-child {
-    margin-left: 2.5px;
+    margin: 0 0 2px 2.5px;
 }
 .WeatherIcon {
     background-color: #cccccc;
