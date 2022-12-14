@@ -37,7 +37,10 @@ function SearchLocation(props) {
         setInputValue(text);
 
         if (data.findIndex(checkLocation) !== -1) {
-          setLocation(text);
+          setLocation(text.replace(/, /g, ','));
+        }
+        else if (text === '') {
+          setLocation('');
         }
         else {
           setLocation("No location found");
@@ -54,6 +57,7 @@ function SearchLocation(props) {
       if (location !== '') {
         props.handleSubmit(location);
         setLocation('');
+        setInputValue('');
       }
   
       event.preventDefault();

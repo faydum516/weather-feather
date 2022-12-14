@@ -59,7 +59,7 @@
   width: 110px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 950px) {
   .CurrentWeather .CW-title {
     font-size: 1em;
   }
@@ -78,5 +78,26 @@
   .currentIcon {
     height: 100px;
     width: 100px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .CurrentWeather .CW-title {
+    font-size: 0.9375em;
+  }
+  .CurrentWeather .CurrentWeatherCard .icon-and-term .weather-term {
+    font-size: 0.875em;
+  }
+  .CurrentWeather .CurrentWeatherCard .temperature .temperature-display {
+    font-size: 1.625em;
+  }
+  .CurrentWeather .CurrentWeatherCard .temperature .temperature-units {
+    font-size: 0.87em;
+  }
+  .CurrentWeather .CurrentWeatherCard .weather-info {
+    font-size: 0.875em;
+  }
+  .currentIcon {
+    height: 93.75px;
+    width: 93.75px;
   }
 }/*# sourceMappingURL=CurrentWeather.css.map */

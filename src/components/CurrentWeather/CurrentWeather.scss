@@ -115,11 +115,51 @@ $weatherInfoFont: $generalFont;
     width: $sideLength;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 950px) {
 
     $titleFont: 1em;
     $temperatureFont: 1.75em;
     $sideLength: 100px;
+
+    .CurrentWeather {
+        .CW-title {
+            font-size: $titleFont;
+        }
+        .CurrentWeatherCard {
+            .icon-and-term {
+                .weather-term {
+                    font-size: $termFont;
+                }
+            }
+            .temperature {
+                .temperature-display {
+                    font-size: $temperatureFont;
+                }
+                .temperature-units {
+                    font-size: $unitFont;
+                }
+            }
+            .weather-info {
+                font-size: $weatherInfoFont;
+            }
+        }
+    }
+
+    .currentIcon {
+        height: $sideLength;
+        width: $sideLength;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    $generalFont: 0.875em;
+    $titleFont: 0.9375em;
+    $temperatureFont: 1.625em;
+    $sideLength: 93.75px;
+    $termFont: $generalFont;
+    $weatherInfoFont: $generalFont;
+    $unitFont: 0.87em;
 
     .CurrentWeather {
         .CW-title {

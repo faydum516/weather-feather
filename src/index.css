@@ -4,7 +4,7 @@
   padding: 0;
   margin: 0;
 }
-body {
+body, html {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -12,14 +12,126 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 100vh;
-  /*background: linear-gradient(130deg, #59bac7, #498faf);*/  
-  background-image: url("blue_sky.png");
+  background-image: url("backgroundDefault.jpg");
+  transition: background-image 3s ease-out;
   background-attachment: fixed;
   background-size: cover;
+}
+body { 
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+.SunnyDay {
+  background-image: url("weatherBackgrounds/SunnyDay.jpg");
+}
+.ClearNight {
+  background-image: url("weatherBackgrounds/ClearNight.jpg");
+}
+.CloudyDay {
+  background-image: url("weatherBackgrounds/CloudyDay.jpg");
+}
+.CloudyNight {
+  background-image: url("weatherBackgrounds/CloudyNight.jpg");
+}
+.OvercastDay {
+  background-image: url("weatherBackgrounds/OvercastDay.jpg");
+}
+.OvercastNight {
+  background-image: url("weatherBackgrounds/OvercastNight.jpg");
+}
+.PartlyCloudyDay {
+  background-image: url("weatherBackgrounds/PartlyCloudyDay.jpg");
+}
+.PartlyCloudyNight {
+  background-image: url("weatherBackgrounds/PartlyCloudyNight.jpg");
+}
+.ThunderStormyDay {
+  background-image: url("weatherBackgrounds/ThunderStormyDay.jpg");
+}
+.ThunderStormyNight {
+  background-image: url("weatherBackgrounds/ThunderStormyNight.jpg");
+}
+.DrizzleDay {
+  background-image: url("weatherBackgrounds/DrizzleDay.jpg");
+}
+.DrizzleNight {
+  background-image: url("weatherBackgrounds/DrizzleNight.jpg");
+}
+.RainyDay {
+  background-image: url("weatherBackgrounds/RainyDay.jpg");
+}
+.RainyNight {
+  background-image: url("weatherBackgrounds/RainyNight.jpg");
+}
+.FreezingRainyDay {
+  background-image: url("weatherBackgrounds/FreezingRainyDay.jpg");
+}
+.FreezingRainyNight {
+  background-image: url("weatherBackgrounds/FreezingRainyNight.jpg");
+}
+.SnowyDay {
+  background-image: url("weatherBackgrounds/SnowyDay.jpg");
+}
+.SnowyNight {
+  background-image: url("weatherBackgrounds/SnowyNight.jpg");
+}
+.ShowerSnowyDay {
+  background-image: url("weatherBackgrounds/ShowerSnowyDay.jpg");
+}
+.ShowerSnowyNight {
+  background-image: url("weatherBackgrounds/ShowerSnowyNight.jpg");
+}
+.SleetDay {
+  background-image: url("weatherBackgrounds/SleetDay.jpg");
+}
+.SleetNight {
+  background-image: url("weatherBackgrounds/SleetNight.jpg");
+}
+.MistyDay {
+  background-image: url("weatherBackgrounds/MistyDay.jpg");
+}
+.MistyNight {
+  background-image: url("weatherBackgrounds/MistyNight.jpg");
+}
+.SmokyDay {
+  background-image: url("weatherBackgrounds/SmokyDay.jpg");
+}
+.SmokyNight {
+  background-image: url("weatherBackgrounds/SmokyNight.jpg");
+}
+.SandyDay {
+  background-image: url("weatherBackgrounds/SandyDay.jpg");
+}
+.SandyNight {
+  background-image: url("weatherBackgrounds/SandyNight.jpg");
+}
+.FoggyDay {
+  background-image: url("weatherBackgrounds/FoggyDay.jpg");
+}
+.FoggyNight {
+  background-image: url("weatherBackgrounds/FoggyNight.jpg");
+}
+.VolcanicDay {
+  background-image: url("weatherBackgrounds/VolcanicDay.jpg");
+}
+.VolcanicNight {
+  background-image: url("weatherBackgrounds/VolcanicNight.jpg");
+}
+.SquallDay {
+  background-image: url("weatherBackgrounds/SquallDay.jpg");
+}
+.SquallNight {
+  background-image: url("weatherBackgrounds/SquallNight.jpg");
+}
+.TornadoDay {
+  background-image: url("weatherBackgrounds/TornadoDay.jpg");
+}
+.TornadoNight {
+  background-image: url("weatherBackgrounds/TornadoNight.jpg");
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

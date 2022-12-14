@@ -1,6 +1,6 @@
-.input-form {
+/* .input-form {
     margin-bottom: 18.75px;
-} 
+}  */
 .input-field {
     position: relative;
     display: flex;
@@ -22,9 +22,8 @@
 .location-input {
     border-width: 0;
     outline: none;
-    padding: 8px 11px;
+    padding: 7px 10px;
     box-sizing: border-box;
-    margin-bottom: 2px;
 }
 .location-input::placeholder {
     color: rgba(0, 0, 0, 0.75);
@@ -64,7 +63,7 @@
     background-color: rgba(0, 0, 0, 0.45);
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 950px){
     .location-input, .suggestion-list {
         font-size: 0.9375em;
         width: 300px;

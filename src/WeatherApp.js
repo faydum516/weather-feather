@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import weatherIcons from './weatherIcons/weatherIcons.js';
 import weatherTerms from './weatherIcons/weatherTerms.js';
+import weatherBackgroundImages from './weatherBackgrounds/weatherBackgroundImages.js';
 import Header from './components/Header/Header.js';
 import SearchLocation from './components/SearchLocation/SearchLocation.js';
 import CurrentWeather from './components/CurrentWeather/CurrentWeather.js';
@@ -32,7 +33,7 @@ function WeatherApp() {
 
     if (location !== '') {
 
-      axios.get(`https://api.openweathermap.org/data/2.5/forecast?q=${location}&cnt=8&appid=6e1a465582c0f73603c073b90273f31f`)
+      axios.get(`https://api.openweathermap.org/data/2.5/forecast?q=${location.replace(/ /g, '+')}&cnt=8&appid=6e1a465582c0f73603c073b90273f31f`)
         .then((response) => {
           const threeHourArr = response.data.list.map((item) => {
               let obj = {};
@@ -65,6 +66,8 @@ function WeatherApp() {
               currentWeatherObj[currentIcon] = weatherIcons[description][icon];
               currentWeatherObj[term] = weatherTerms[description][icon];
               currentWeatherObj[mainWeather] = resp.data.weather[0].main;
+              document.body.className = weatherBackgroundImages[description][icon];
+              document.documentElement.className = weatherBackgroundImages[description][icon];
               currentWeatherObj[celTemp] = celsiusTemp;
               currentWeatherObj[farhTemp] = fahrenheitTemp;
               currentWeatherObj[humidity] = `${resp.data.main.humidity}%`;
@@ -92,12 +95,12 @@ function WeatherApp() {
 
   return (
     <main className="WeatherApp">
-      <Header />
-      <SearchLocation handleSubmit={searchLocation} />
+      <Header currentLocation={location} searchComponent={<SearchLocation handleSubmit={searchLocation} />}/>
+      {!location && <SearchLocation handleSubmit={searchLocation} />}
       {location && (location !== "No location found" ?
         <section className="weather-section">
           <h2 className="location-title">{location.replace(/,/g, ", ")}</h2>
-          <CurrentWeather currentWeather={currentWeather}/>
+          <CurrentWeather currentWeather={currentWeather} />
           <ThreeHourForecast hourArr={hourlyForecast} />
         </section> :
         <p className="no-location">Sorry, no such location is found.</p>)

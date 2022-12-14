@@ -4,7 +4,13 @@
   justify-content: center;
   align-items: center;
 }
+.weather-section {
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #aaaaaa8f;
+}
 .location-title {
+    text-align: center;
     font-size: 1.75em;
 }
 .no-location {
@@ -15,15 +21,18 @@
 
 @media screen and (max-width: 950px) {
     .location-title {
-        text-align: center;
+        font-size: 1.5em;
+    }
+    .no-location {
+        font-size: 1.1875em;
     }
 }
 
 @media screen and (max-width: 500px) {
     .location-title {
-        font-size: 1.5em;
+        font-size: 1.375em;
     }
     .no-location {
-        font-size: 1.1875em;
+        font-size: 1.15em;
     }
 }
