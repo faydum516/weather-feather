@@ -153,17 +153,19 @@ $weatherInfoFont: $generalFont;
 
 @media screen and (max-width: 500px) {
 
-    $generalFont: 0.875em;
-    $titleFont: 0.9375em;
-    $temperatureFont: 1.625em;
+    $titleMargin: 12px 0 16px 0;
+    $generalFont: 0.8125em;
+    $titleFont: 0.90625em;
+    $temperatureFont: 1.5625em;
     $sideLength: 93.75px;
     $termFont: $generalFont;
     $weatherInfoFont: $generalFont;
-    $unitFont: 0.87em;
+    $unitFont: 0.85em;
 
     .CurrentWeather {
         .CW-title {
             font-size: $titleFont;
+            margin: $titleMargin;
         }
         .CurrentWeatherCard {
             .icon-and-term {

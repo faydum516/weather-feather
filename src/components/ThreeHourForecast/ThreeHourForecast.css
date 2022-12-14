@@ -48,6 +48,7 @@
 
 @media screen and (max-width: 950px) {
     .ForecastTitle {
+        margin: 16px 0;
         font-size: 1em;
     }
     .ForecastCards {
@@ -70,13 +71,13 @@
 
 @media screen and (max-width: 500px) {
     .ForecastTitle {
-        font-size: 0.9375em;
+        font-size: 0.90625em;
     }
     .ForecastCards {
-        width: 381.25px;
+        width: 375px;
     }
     .WeatherIcon {
-        width: 60px;
-        height: 60px;
+        width: 58.75px;
+        height: 58.75px;
     }
 }

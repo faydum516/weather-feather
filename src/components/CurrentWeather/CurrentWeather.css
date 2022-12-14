@@ -82,19 +82,20 @@
 }
 @media screen and (max-width: 500px) {
   .CurrentWeather .CW-title {
-    font-size: 0.9375em;
+    font-size: 0.90625em;
+    margin: 12px 0 16px 0;
   }
   .CurrentWeather .CurrentWeatherCard .icon-and-term .weather-term {
-    font-size: 0.875em;
+    font-size: 0.8125em;
   }
   .CurrentWeather .CurrentWeatherCard .temperature .temperature-display {
-    font-size: 1.625em;
+    font-size: 1.5625em;
   }
   .CurrentWeather .CurrentWeatherCard .temperature .temperature-units {
-    font-size: 0.87em;
+    font-size: 0.85em;
   }
   .CurrentWeather .CurrentWeatherCard .weather-info {
-    font-size: 0.875em;
+    font-size: 0.8125em;
   }
   .currentIcon {
     height: 93.75px;

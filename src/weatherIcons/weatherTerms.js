@@ -96,8 +96,8 @@ const weatherTerms = {
         "10n": "Rainy"
     },
     "freezing rain": {
-        "13d": "Rainy",
-        "13n": "Rainy"
+        "13d": "Freezing Rain",
+        "13n": "Freezing Rain"
     },
     "light intensity shower rain": {
         "09d": "Rainy",

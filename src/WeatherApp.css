@@ -29,6 +29,9 @@
 }
 
 @media screen and (max-width: 500px) {
+    .weather-section {
+        padding: 10px;
+    }
     .location-title {
         font-size: 1.375em;
     }
