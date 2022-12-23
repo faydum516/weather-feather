@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/weather-feather/static/css/main.4bf62840.css",
-    "main.js": "/weather-feather/static/js/main.53f9dd4e.js",
+    "main.js": "/weather-feather/static/js/main.8d092e33.js",
     "static/js/787.4ab770c9.chunk.js": "/weather-feather/static/js/787.4ab770c9.chunk.js",
     "static/media/SleetDay.jpg": "/weather-feather/static/media/SleetDay.2260fee676d8654f2fad.jpg",
     "static/media/PartlyCloudyDay.jpg": "/weather-feather/static/media/PartlyCloudyDay.b4b503eff35afe01e940.jpg",
@@ -42,11 +42,11 @@
     "static/media/backgroundDefault.jpg": "/weather-feather/static/media/backgroundDefault.5f5ba1b39b6c02838f1f.jpg",
     "index.html": "/weather-feather/index.html",
     "main.4bf62840.css.map": "/weather-feather/static/css/main.4bf62840.css.map",
-    "main.53f9dd4e.js.map": "/weather-feather/static/js/main.53f9dd4e.js.map",
+    "main.8d092e33.js.map": "/weather-feather/static/js/main.8d092e33.js.map",
     "787.4ab770c9.chunk.js.map": "/weather-feather/static/js/787.4ab770c9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4bf62840.css",
-    "static/js/main.53f9dd4e.js"
+    "static/js/main.8d092e33.js"
   ]
 }
