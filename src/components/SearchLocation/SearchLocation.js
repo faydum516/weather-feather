@@ -54,7 +54,7 @@ function SearchLocation(props) {
     }
 
     function handleSubmit(event) {
-      if (location !== '') {
+      if (location) {
         props.handleSubmit(location);
         setLocation('');
         setInputValue('');
