@@ -8,8 +8,9 @@ function ThreeHourForecast({hourArr}) {
               {hourArr.map((forecast, index) => {
                 return (
                   <div className="ForecastCard" key={index}>
-                    <img className="WeatherIcon" src={forecast.icon} alt={forecast.alt} />
                     <p className="ForecastTime">{forecast.time}</p>
+                    <img className="WeatherIcon" src={forecast.icon} alt={forecast.alt} />
+                    <p className="ForecastTemp">{forecast.temp}</p>
                   </div>
                 );
               })}

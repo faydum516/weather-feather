@@ -1,4 +1,3 @@
-import './index.css';
 import './WeatherApp.css';
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
@@ -20,6 +19,7 @@ function WeatherApp() {
       axios.get(`https://api.openweathermap.org/data/2.5/forecast?q=${location.replace(/ /g, '+')}&cnt=8&appid=6e1a465582c0f73603c073b90273f31f`)
         .then((response) => {
           const threeHourArr = response.data.list.map((item) => {
+              console.log(item);
               let dateTime = item.dt_txt;
               let description = item.weather[0].description.toLowerCase();
               let icon = item.weather[0].icon;
@@ -30,7 +30,8 @@ function WeatherApp() {
                   hour > 0 ? `${hour} AM` :
                   "12 AM",
                   icon: weatherIcons[description][icon],
-                  alt: description
+                  alt: description,
+                  temp: `${Math.round(item.main.temp - 273.15)}°C` // The resp.data.main.temp value is in kelvins.
               };
               return forecastObj;
           });

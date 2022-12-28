@@ -36,6 +36,9 @@
 .ForecastCard:last-child {
     margin: 0 0 2px 2.5px;
 }
+.ForecastTime {
+    margin-bottom: 5px;
+}
 .WeatherIcon {
     background-color: #cccccc;
     width: 90px;
