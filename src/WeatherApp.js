@@ -48,8 +48,8 @@ function WeatherApp() {
               let celsiusTemp = `${Math.round(resp.data.main.temp - 273.15)}°C`; // The resp.data.main.temp value is in kelvins.
               let fahrenheitTemp = `${Math.round(1.8 * (resp.data.main.temp - 273) + 32)}°F`;
               let windSpeed = `${Math.round(resp.data.wind.speed * 3600 / 1000)}km/h`;
-              let sunSet = new Date(resp.data.sys.sunset * 1000).toLocaleTimeString();
-              let sunRise = new Date(resp.data.sys.sunrise * 1000).toLocaleTimeString();
+              let sunSet = new Date(resp.data.sys.sunset * 1000).toLocaleTimeString('en-US');
+              let sunRise = new Date(resp.data.sys.sunrise * 1000).toLocaleTimeString('en-US');
 
               // Changing background images
               document.body.className = weatherBackgroundImages[description][icon];
